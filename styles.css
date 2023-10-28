@@ -1,0 +1,80 @@
+body {
+    background-image: url(img/Background.png);
+}
+
+.titulo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #D6D6F2;
+    width: 380px;
+    height: 96px;
+    margin-bottom: 24px;
+}
+
+.texto {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #D6D6F2;
+    width: 380px;
+    height: 56px;
+    margin-bottom: 56px;
+}
+
+.botao {
+    border-radius: 999px;
+    background-color: #151557;
+    color: #E2E2F5;
+    display: inline-block;
+    height: 44px;
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.botao:hover {
+    background-color: #212187;
+    text-decoration: none;
+}
+
+.animacao {
+    width: 230px;
+    height: 230px;
+}
+
+.texto_e_botoes {
+    position: fixed;
+    left: 160px;
+    top: 249px;
+}
+
+.quatro_esquerda{
+
+}
+
+.quatros_e_animacao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+/*
+position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 900px;
+
+https://www.figma.com/app_auth/f335bac6-eee1-49d8-9abe-f8b2ac7c9070/grant?desktop_protocol=vscode
