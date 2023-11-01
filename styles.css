@@ -24,24 +24,25 @@ body {
     margin-bottom: 56px;
 }
 
-.botao {
+button.botao {
+    border: #151557;
+    height: 44px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     border-radius: 999px;
     background-color: #151557;
     color: #E2E2F5;
-    display: inline-block;
-    height: 44px;
-    text-decoration: none;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-transform: uppercase;
 }
 
 .botoes {
     display: flex;
     align-items: center;
     gap: 16px;
+    text-decoration: none;
 }
 
 .botao:hover {
@@ -55,26 +56,51 @@ body {
 }
 
 .texto_e_botoes {
-    position: fixed;
-    left: 160px;
-    top: 249px;
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 160px;
+    margin-top: 249px;
 }
 
-.quatro_esquerda{
-
+.quatro {
+    display: block;
+    width: 80.156px;
+    height: 105.391px;
+    align-items: center;
+    justify-content: center;
 }
 
 .quatros_e_animacao {
-    display: inline-flex;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 8px;
+    margin-left: 782.84px;
+    margin-top: -248.5px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
 }
-/*
-position: fixed;
-display: flex;
-justify-content: center;
-align-items: center;
-left: 900px;
 
-https://www.figma.com/app_auth/f335bac6-eee1-49d8-9abe-f8b2ac7c9070/grant?desktop_protocol=vscode
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .texto_e_botoes{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .titulo, .texto{
+        text-align: center;
+    }
+
+    .quatros_e_animacao{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Estilos para dispositivos móveis (celulares) */
+}
