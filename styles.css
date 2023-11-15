@@ -1,5 +1,14 @@
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-image: url(img/Background.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .titulo {
@@ -78,17 +87,20 @@ button.botao {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 8px;
-    margin-left: 782.84px;
-    margin-top: -248.5px;
+    margin: auto;
+    position: relative;
+    left: 200px;
+    top: 100px;
     justify-content: center;
     align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
     .texto_e_botoes{
         width: 400px;
         justify-content: center;
         align-items: center;
+        position: relative;
         margin-top: 100px;
     }
 
@@ -97,10 +109,28 @@ button.botao {
     }
 
     .quatros_e_animacao{
-        margin-bottom: 100px;
+        right: 10000px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    /* Estilos para dispositivos móveis (celulares) */
+    .texto_e_botoes{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .titulo, .texto{
+        text-align: center;
+    }
+
+    .quatros_e_animacao{
+        justify-content: left;
+        position: relative;
+        margin: auto;
+        margin-top: 500px;
+    }
 }
